@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="./favicon.png"><![endif]--><title>Daraja - Safaricom Developers' Portal</title><link href="./css/chunk-18f5c9dc.a5140efd.css" rel="prefetch"><link href="./css/chunk-21c8269c.02a5964a.css" rel="prefetch"><link href="./css/chunk-24eec660.cde58605.css" rel="prefetch"><link href="./css/chunk-26a0b046.59e9a848.css" rel="prefetch"><link href="./css/chunk-40662cc3.9a22341e.css" rel="prefetch"><link href="./css/chunk-71367435.42eda264.css" rel="prefetch"><link href="./css/chunk-73daf936.cb5713ac.css" rel="prefetch"><link href="./css/chunk-81eea4b8.07cfbfb2.css" rel="prefetch"><link href="./js/chunk-18f5c9dc.daa619e6.js" rel="prefetch"><link href="./js/chunk-21c8269c.28e38ffd.js" rel="prefetch"><link href="./js/chunk-24eec660.f0626a1f.js" rel="prefetch"><link href="./js/chunk-26a0b046.6e435219.js" rel="prefetch"><link href="./js/chunk-2d0cbca3.d4d6ace3.js" rel="prefetch"><link href="./js/chunk-2d0e2720.e07b0791.js" rel="prefetch"><link href="./js/chunk-2d2167ab.31bbeb10.js" rel="prefetch"><link href="./js/chunk-40662cc3.8e5a9443.js" rel="prefetch"><link href="./js/chunk-71367435.c4acd323.js" rel="prefetch"><link href="./js/chunk-73daf936.8e5f8345.js" rel="prefetch"><link href="./js/chunk-81eea4b8.bd96e120.js" rel="prefetch"><link href="./js/chunk-94977566.1254d0e1.js" rel="prefetch"><link href="./css/app.c91d70ee.css" rel="preload" as="style"><link href="./css/chunk-vendors.6f9797de.css" rel="preload" as="style"><link href="./js/app.e8c2f305.js" rel="preload" as="script"><link href="./js/chunk-vendors.e6d9ba4c.js" rel="preload" as="script"><link href="./css/chunk-vendors.6f9797de.css" rel="stylesheet"><link href="./css/app.c91d70ee.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png"><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#39B54A"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Daraja - Safaricom Developers' Portal"><link rel="apple-touch-icon" href="./img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#39B54A"><meta name="msapplication-TileImage" content="./img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#39B54A"><style id="vuescroll-silde-mode-style" type="text/css">
+    @-webkit-keyframes loading-rotate {
+      to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes loading-rotate {
+      to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+      }
+    }
+
+    @-webkit-keyframes loading-wipe {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -40px;
+      }
+      to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -120px;
+      }
+    }
+
+    @keyframes loading-wipe {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -40px;
+      }
+      to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -120px;
+      }
+    }
+
+    .__vuescroll .__refresh,
+    .__vuescroll .__load {
+      position: absolute;
+      width: 100%;
+      color: black;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .__vuescroll .__refresh svg,
+    .__vuescroll .__load svg {
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+      vertical-align: sub;
+    }
+    .__vuescroll .__refresh svg.active,
+    .__vuescroll .__load svg.active {
+      transition: all 0.2s;
+    }
+    .__vuescroll .__refresh svg.active.deactive,
+    .__vuescroll .__load svg.active.deactive {
+      transform: rotateZ(180deg);
+    }
+    .__vuescroll .__refresh svg path,
+    .__vuescroll .__refresh svg rect,
+    .__vuescroll .__load svg path,
+    .__vuescroll .__load svg rect {
+      fill: #20a0ff;
+    }
+    .__vuescroll .__refresh svg.start,
+    .__vuescroll .__load svg.start {
+      stroke: #343640;
+      stroke-width: 4;
+      stroke-linecap: round;
+      -webkit-animation: loading-rotate 2s linear infinite;
+      animation: loading-rotate 2s linear infinite;
+    }
+    .__vuescroll .__refresh svg.start .bg-path,
+    .__vuescroll .__load svg.start .bg-path {
+      stroke: #f2f2f2;
+      fill: none;
+    }
+    .__vuescroll .__refresh svg.start .active-path,
+    .__vuescroll .__load svg.start .active-path {
+      stroke: #20a0ff;
+      fill: none;
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: 0;
+      -webkit-animation: loading-wipe 1.5s ease-in-out infinite;
+      animation: loading-wipe 1.5s ease-in-out infinite;
+    }
+  </style><style type="text/css"> .__cov-progress { opacity: 1; z-index: 999999; } </style><link rel="stylesheet" type="text/css" href="./css/chunk-26a0b046.59e9a848.css"><script charset="utf-8" src="./js/chunk-26a0b046.6e435219.js"></script><style type="text/css" id="vuetify-theme-stylesheet">:root {
+  --v-anchor-base: #39b54a;
+  --v-primary-base: #39b54a;
+  --v-primary-lighten5: #d0ffd0;
+  --v-primary-lighten4: #b2ffb4;
+  --v-primary-lighten3: #95ff99;
+  --v-primary-lighten2: #78ee7e;
+  --v-primary-lighten1: #5ad164;
+  --v-primary-darken1: #079a30;
+  --v-primary-darken2: #007f15;
+  --v-primary-darken3: #006500;
+  --v-primary-darken4: #004b00;
+  --v-secondary-base: #424242;
+  --v-secondary-lighten5: #c1c1c1;
+  --v-secondary-lighten4: #a6a6a6;
+  --v-secondary-lighten3: #8b8b8b;
+  --v-secondary-lighten2: #727272;
+  --v-secondary-lighten1: #595959;
+  --v-secondary-darken1: #2c2c2c;
+  --v-secondary-darken2: #171717;
+  --v-secondary-darken3: #000000;
+  --v-secondary-darken4: #000000;
+  --v-accent-base: #82b1ff;
+  --v-accent-lighten5: #ffffff;
+  --v-accent-lighten4: #f8ffff;
+  --v-accent-lighten3: #daffff;
+  --v-accent-lighten2: #bce8ff;
+  --v-accent-lighten1: #9fccff;
+  --v-accent-darken1: #6596e2;
+  --v-accent-darken2: #467dc6;
+  --v-accent-darken3: #2364aa;
+  --v-accent-darken4: #004c90;
+  --v-error-base: #ff5252;
+  --v-error-lighten5: #ffe4d5;
+  --v-error-lighten4: #ffc6b9;
+  --v-error-lighten3: #ffa99e;
+  --v-error-lighten2: #ff8c84;
+  --v-error-lighten1: #ff6f6a;
+  --v-error-darken1: #df323b;
+  --v-error-darken2: #bf0025;
+  --v-error-darken3: #9f0010;
+  --v-error-darken4: #800000;
+  --v-info-base: #2196f3;
+  --v-info-lighten5: #d4ffff;
+  --v-info-lighten4: #b5ffff;
+  --v-info-lighten3: #95e8ff;
+  --v-info-lighten2: #75ccff;
+  --v-info-lighten1: #51b0ff;
+  --v-info-darken1: #007cd6;
+  --v-info-darken2: #0064ba;
+  --v-info-darken3: #004d9f;
+  --v-info-darken4: #003784;
+  --v-success-base: #4caf50;
+  --v-success-lighten5: #dcffd6;
+  --v-success-lighten4: #beffba;
+  --v-success-lighten3: #a2ff9e;
+  --v-success-lighten2: #85e783;
+  --v-success-lighten1: #69cb69;
+  --v-success-darken1: #2d9437;
+  --v-success-darken2: #00791e;
+  --v-success-darken3: #006000;
+  --v-success-darken4: #004700;
+  --v-warning-base: #ffc107;
+  --v-warning-lighten5: #ffffae;
+  --v-warning-lighten4: #ffff91;
+  --v-warning-lighten3: #ffff74;
+  --v-warning-lighten2: #fff956;
+  --v-warning-lighten1: #ffdd37;
+  --v-warning-darken1: #e0a600;
+  --v-warning-darken2: #c18c00;
+  --v-warning-darken3: #a27300;
+  --v-warning-darken4: #855a00;
+}
+
+.v-application a { color: var(--v-anchor-base); }
+.v-application .primary {
+  background-color: var(--v-primary-base) !important;
+  border-color: var(--v-primary-base) !important;
+}
+.v-application .primary--text {
+  color: var(--v-primary-base) !important;
+  caret-color: var(--v-primary-base) !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: var(--v-primary-lighten5) !important;
+  border-color: var(--v-primary-lighten5) !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: var(--v-primary-lighten5) !important;
+  caret-color: var(--v-primary-lighten5) !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: var(--v-primary-lighten4) !important;
+  border-color: var(--v-primary-lighten4) !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: var(--v-primary-lighten4) !important;
+  caret-color: var(--v-primary-lighten4) !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: var(--v-primary-lighten3) !important;
+  border-color: var(--v-primary-lighten3) !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: var(--v-primary-lighten3) !important;
+  caret-color: var(--v-primary-lighten3) !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: var(--v-primary-lighten2) !important;
+  border-color: var(--v-primary-lighten2) !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: var(--v-primary-lighten2) !important;
+  caret-color: var(--v-primary-lighten2) !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: var(--v-primary-lighten1) !important;
+  border-color: var(--v-primary-lighten1) !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: var(--v-primary-lighten1) !important;
+  caret-color: var(--v-primary-lighten1) !important;
+}
+.v-application .primary.darken-1 {
+  background-color: var(--v-primary-darken1) !important;
+  border-color: var(--v-primary-darken1) !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: var(--v-primary-darken1) !important;
+  caret-color: var(--v-primary-darken1) !important;
+}
+.v-application .primary.darken-2 {
+  background-color: var(--v-primary-darken2) !important;
+  border-color: var(--v-primary-darken2) !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: var(--v-primary-darken2) !important;
+  caret-color: var(--v-primary-darken2) !important;
+}
+.v-application .primary.darken-3 {
+  background-color: var(--v-primary-darken3) !important;
+  border-color: var(--v-primary-darken3) !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: var(--v-primary-darken3) !important;
+  caret-color: var(--v-primary-darken3) !important;
+}
+.v-application .primary.darken-4 {
+  background-color: var(--v-primary-darken4) !important;
+  border-color: var(--v-primary-darken4) !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: var(--v-primary-darken4) !important;
+  caret-color: var(--v-primary-darken4) !important;
+}
+.v-application .secondary {
+  background-color: var(--v-secondary-base) !important;
+  border-color: var(--v-secondary-base) !important;
+}
+.v-application .secondary--text {
+  color: var(--v-secondary-base) !important;
+  caret-color: var(--v-secondary-base) !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: var(--v-secondary-lighten5) !important;
+  border-color: var(--v-secondary-lighten5) !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: var(--v-secondary-lighten5) !important;
+  caret-color: var(--v-secondary-lighten5) !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: var(--v-secondary-lighten4) !important;
+  border-color: var(--v-secondary-lighten4) !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: var(--v-secondary-lighten4) !important;
+  caret-color: var(--v-secondary-lighten4) !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: var(--v-secondary-lighten3) !important;
+  border-color: var(--v-secondary-lighten3) !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: var(--v-secondary-lighten3) !important;
+  caret-color: var(--v-secondary-lighten3) !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: var(--v-secondary-lighten2) !important;
+  border-color: var(--v-secondary-lighten2) !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: var(--v-secondary-lighten2) !important;
+  caret-color: var(--v-secondary-lighten2) !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: var(--v-secondary-lighten1) !important;
+  border-color: var(--v-secondary-lighten1) !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: var(--v-secondary-lighten1) !important;
+  caret-color: var(--v-secondary-lighten1) !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: var(--v-secondary-darken1) !important;
+  border-color: var(--v-secondary-darken1) !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: var(--v-secondary-darken1) !important;
+  caret-color: var(--v-secondary-darken1) !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: var(--v-secondary-darken2) !important;
+  border-color: var(--v-secondary-darken2) !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: var(--v-secondary-darken2) !important;
+  caret-color: var(--v-secondary-darken2) !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: var(--v-secondary-darken3) !important;
+  border-color: var(--v-secondary-darken3) !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: var(--v-secondary-darken3) !important;
+  caret-color: var(--v-secondary-darken3) !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: var(--v-secondary-darken4) !important;
+  border-color: var(--v-secondary-darken4) !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: var(--v-secondary-darken4) !important;
+  caret-color: var(--v-secondary-darken4) !important;
+}
+.v-application .accent {
+  background-color: var(--v-accent-base) !important;
+  border-color: var(--v-accent-base) !important;
+}
+.v-application .accent--text {
+  color: var(--v-accent-base) !important;
+  caret-color: var(--v-accent-base) !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: var(--v-accent-lighten5) !important;
+  border-color: var(--v-accent-lighten5) !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: var(--v-accent-lighten5) !important;
+  caret-color: var(--v-accent-lighten5) !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: var(--v-accent-lighten4) !important;
+  border-color: var(--v-accent-lighten4) !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: var(--v-accent-lighten4) !important;
+  caret-color: var(--v-accent-lighten4) !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: var(--v-accent-lighten3) !important;
+  border-color: var(--v-accent-lighten3) !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: var(--v-accent-lighten3) !important;
+  caret-color: var(--v-accent-lighten3) !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: var(--v-accent-lighten2) !important;
+  border-color: var(--v-accent-lighten2) !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: var(--v-accent-lighten2) !important;
+  caret-color: var(--v-accent-lighten2) !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: var(--v-accent-lighten1) !important;
+  border-color: var(--v-accent-lighten1) !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: var(--v-accent-lighten1) !important;
+  caret-color: var(--v-accent-lighten1) !important;
+}
+.v-application .accent.darken-1 {
+  background-color: var(--v-accent-darken1) !important;
+  border-color: var(--v-accent-darken1) !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: var(--v-accent-darken1) !important;
+  caret-color: var(--v-accent-darken1) !important;
+}
+.v-application .accent.darken-2 {
+  background-color: var(--v-accent-darken2) !important;
+  border-color: var(--v-accent-darken2) !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: var(--v-accent-darken2) !important;
+  caret-color: var(--v-accent-darken2) !important;
+}
+.v-application .accent.darken-3 {
+  background-color: var(--v-accent-darken3) !important;
+  border-color: var(--v-accent-darken3) !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: var(--v-accent-darken3) !important;
+  caret-color: var(--v-accent-darken3) !important;
+}
+.v-application .accent.darken-4 {
+  background-color: var(--v-accent-darken4) !important;
+  border-color: var(--v-accent-darken4) !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: var(--v-accent-darken4) !important;
+  caret-color: var(--v-accent-darken4) !important;
+}
+.v-application .error {
+  background-color: var(--v-error-base) !important;
+  border-color: var(--v-error-base) !important;
+}
+.v-application .error--text {
+  color: var(--v-error-base) !important;
+  caret-color: var(--v-error-base) !important;
+}
+.v-application .error.lighten-5 {
+  background-color: var(--v-error-lighten5) !important;
+  border-color: var(--v-error-lighten5) !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: var(--v-error-lighten5) !important;
+  caret-color: var(--v-error-lighten5) !important;
+}
+.v-application .error.lighten-4 {
+  background-color: var(--v-error-lighten4) !important;
+  border-color: var(--v-error-lighten4) !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: var(--v-error-lighten4) !important;
+  caret-color: var(--v-error-lighten4) !important;
+}
+.v-application .error.lighten-3 {
+  background-color: var(--v-error-lighten3) !important;
+  border-color: var(--v-error-lighten3) !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: var(--v-error-lighten3) !important;
+  caret-color: var(--v-error-lighten3) !important;
+}
+.v-application .error.lighten-2 {
+  background-color: var(--v-error-lighten2) !important;
+  border-color: var(--v-error-lighten2) !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: var(--v-error-lighten2) !important;
+  caret-color: var(--v-error-lighten2) !important;
+}
+.v-application .error.lighten-1 {
+  background-color: var(--v-error-lighten1) !important;
+  border-color: var(--v-error-lighten1) !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: var(--v-error-lighten1) !important;
+  caret-color: var(--v-error-lighten1) !important;
+}
+.v-application .error.darken-1 {
+  background-color: var(--v-error-darken1) !important;
+  border-color: var(--v-error-darken1) !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: var(--v-error-darken1) !important;
+  caret-color: var(--v-error-darken1) !important;
+}
+.v-application .error.darken-2 {
+  background-color: var(--v-error-darken2) !important;
+  border-color: var(--v-error-darken2) !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: var(--v-error-darken2) !important;
+  caret-color: var(--v-error-darken2) !important;
+}
+.v-application .error.darken-3 {
+  background-color: var(--v-error-darken3) !important;
+  border-color: var(--v-error-darken3) !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: var(--v-error-darken3) !important;
+  caret-color: var(--v-error-darken3) !important;
+}
+.v-application .error.darken-4 {
+  background-color: var(--v-error-darken4) !important;
+  border-color: var(--v-error-darken4) !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: var(--v-error-darken4) !important;
+  caret-color: var(--v-error-darken4) !important;
+}
+.v-application .info {
+  background-color: var(--v-info-base) !important;
+  border-color: var(--v-info-base) !important;
+}
+.v-application .info--text {
+  color: var(--v-info-base) !important;
+  caret-color: var(--v-info-base) !important;
+}
+.v-application .info.lighten-5 {
+  background-color: var(--v-info-lighten5) !important;
+  border-color: var(--v-info-lighten5) !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: var(--v-info-lighten5) !important;
+  caret-color: var(--v-info-lighten5) !important;
+}
+.v-application .info.lighten-4 {
+  background-color: var(--v-info-lighten4) !important;
+  border-color: var(--v-info-lighten4) !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: var(--v-info-lighten4) !important;
+  caret-color: var(--v-info-lighten4) !important;
+}
+.v-application .info.lighten-3 {
+  background-color: var(--v-info-lighten3) !important;
+  border-color: var(--v-info-lighten3) !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: var(--v-info-lighten3) !important;
+  caret-color: var(--v-info-lighten3) !important;
+}
+.v-application .info.lighten-2 {
+  background-color: var(--v-info-lighten2) !important;
+  border-color: var(--v-info-lighten2) !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: var(--v-info-lighten2) !important;
+  caret-color: var(--v-info-lighten2) !important;
+}
+.v-application .info.lighten-1 {
+  background-color: var(--v-info-lighten1) !important;
+  border-color: var(--v-info-lighten1) !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: var(--v-info-lighten1) !important;
+  caret-color: var(--v-info-lighten1) !important;
+}
+.v-application .info.darken-1 {
+  background-color: var(--v-info-darken1) !important;
+  border-color: var(--v-info-darken1) !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: var(--v-info-darken1) !important;
+  caret-color: var(--v-info-darken1) !important;
+}
+.v-application .info.darken-2 {
+  background-color: var(--v-info-darken2) !important;
+  border-color: var(--v-info-darken2) !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: var(--v-info-darken2) !important;
+  caret-color: var(--v-info-darken2) !important;
+}
+.v-application .info.darken-3 {
+  background-color: var(--v-info-darken3) !important;
+  border-color: var(--v-info-darken3) !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: var(--v-info-darken3) !important;
+  caret-color: var(--v-info-darken3) !important;
+}
+.v-application .info.darken-4 {
+  background-color: var(--v-info-darken4) !important;
+  border-color: var(--v-info-darken4) !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: var(--v-info-darken4) !important;
+  caret-color: var(--v-info-darken4) !important;
+}
+.v-application .success {
+  background-color: var(--v-success-base) !important;
+  border-color: var(--v-success-base) !important;
+}
+.v-application .success--text {
+  color: var(--v-success-base) !important;
+  caret-color: var(--v-success-base) !important;
+}
+.v-application .success.lighten-5 {
+  background-color: var(--v-success-lighten5) !important;
+  border-color: var(--v-success-lighten5) !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: var(--v-success-lighten5) !important;
+  caret-color: var(--v-success-lighten5) !important;
+}
+.v-application .success.lighten-4 {
+  background-color: var(--v-success-lighten4) !important;
+  border-color: var(--v-success-lighten4) !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: var(--v-success-lighten4) !important;
+  caret-color: var(--v-success-lighten4) !important;
+}
+.v-application .success.lighten-3 {
+  background-color: var(--v-success-lighten3) !important;
+  border-color: var(--v-success-lighten3) !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: var(--v-success-lighten3) !important;
+  caret-color: var(--v-success-lighten3) !important;
+}
+.v-application .success.lighten-2 {
+  background-color: var(--v-success-lighten2) !important;
+  border-color: var(--v-success-lighten2) !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: var(--v-success-lighten2) !important;
+  caret-color: var(--v-success-lighten2) !important;
+}
+.v-application .success.lighten-1 {
+  background-color: var(--v-success-lighten1) !important;
+  border-color: var(--v-success-lighten1) !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: var(--v-success-lighten1) !important;
+  caret-color: var(--v-success-lighten1) !important;
+}
+.v-application .success.darken-1 {
+  background-color: var(--v-success-darken1) !important;
+  border-color: var(--v-success-darken1) !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: var(--v-success-darken1) !important;
+  caret-color: var(--v-success-darken1) !important;
+}
+.v-application .success.darken-2 {
+  background-color: var(--v-success-darken2) !important;
+  border-color: var(--v-success-darken2) !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: var(--v-success-darken2) !important;
+  caret-color: var(--v-success-darken2) !important;
+}
+.v-application .success.darken-3 {
+  background-color: var(--v-success-darken3) !important;
+  border-color: var(--v-success-darken3) !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: var(--v-success-darken3) !important;
+  caret-color: var(--v-success-darken3) !important;
+}
+.v-application .success.darken-4 {
+  background-color: var(--v-success-darken4) !important;
+  border-color: var(--v-success-darken4) !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: var(--v-success-darken4) !important;
+  caret-color: var(--v-success-darken4) !important;
+}
+.v-application .warning {
+  background-color: var(--v-warning-base) !important;
+  border-color: var(--v-warning-base) !important;
+}
+.v-application .warning--text {
+  color: var(--v-warning-base) !important;
+  caret-color: var(--v-warning-base) !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: var(--v-warning-lighten5) !important;
+  border-color: var(--v-warning-lighten5) !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: var(--v-warning-lighten5) !important;
+  caret-color: var(--v-warning-lighten5) !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: var(--v-warning-lighten4) !important;
+  border-color: var(--v-warning-lighten4) !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: var(--v-warning-lighten4) !important;
+  caret-color: var(--v-warning-lighten4) !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: var(--v-warning-lighten3) !important;
+  border-color: var(--v-warning-lighten3) !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: var(--v-warning-lighten3) !important;
+  caret-color: var(--v-warning-lighten3) !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: var(--v-warning-lighten2) !important;
+  border-color: var(--v-warning-lighten2) !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: var(--v-warning-lighten2) !important;
+  caret-color: var(--v-warning-lighten2) !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: var(--v-warning-lighten1) !important;
+  border-color: var(--v-warning-lighten1) !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: var(--v-warning-lighten1) !important;
+  caret-color: var(--v-warning-lighten1) !important;
+}
+.v-application .warning.darken-1 {
+  background-color: var(--v-warning-darken1) !important;
+  border-color: var(--v-warning-darken1) !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: var(--v-warning-darken1) !important;
+  caret-color: var(--v-warning-darken1) !important;
+}
+.v-application .warning.darken-2 {
+  background-color: var(--v-warning-darken2) !important;
+  border-color: var(--v-warning-darken2) !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: var(--v-warning-darken2) !important;
+  caret-color: var(--v-warning-darken2) !important;
+}
+.v-application .warning.darken-3 {
+  background-color: var(--v-warning-darken3) !important;
+  border-color: var(--v-warning-darken3) !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: var(--v-warning-darken3) !important;
+  caret-color: var(--v-warning-darken3) !important;
+}
+.v-application .warning.darken-4 {
+  background-color: var(--v-warning-darken4) !important;
+  border-color: var(--v-warning-darken4) !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: var(--v-warning-darken4) !important;
+  caret-color: var(--v-warning-darken4) !important;
+}</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}[data-typeit-id]</style><style id="5597607">@keyframes blink-5597607 { 0% {opacity: 0} 49% {opacity: 0} 50% {opacity: 1} } [data-typeit-id='5597607'] .ti-cursor { animation: blink-5597607 1s infinite; } [data-typeit-id='5597607'] .ti-cursor.with-delay { animation-delay: 500ms; } [data-typeit-id='5597607'] .ti-cursor.disabled { animation: none; }</style><script charset="utf-8" src="./js/chunk-2d0cbca3.d4d6ace3.js"></script></head><body><noscript><strong>We're sorry but daraja doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div data-app="true" class="v-application v-application--is-ltr theme--light" id="app"><div class="v-application--wrap"><div class="__cov-progress" style="background-color: rgb(143, 255, 199); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div><div class="elevation-15 v-card v-sheet theme--light rounded-0"><header class="elevation-20 v-sheet theme--dark v-toolbar v-toolbar--extended v-app-bar v-app-bar--clipped v-app-bar--fixed primary" data-booted="true" style="height: 104px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px; border-radius: 0px;"><div class="v-toolbar__image"><div class="v-image v-responsive theme--dark" style="height: 104px;"><div class="v-responsive__sizer" style="padding-bottom: 66.6667%;"></div><div class="v-image__image v-image__image--cover" style="background-image: linear-gradient(to right top, rgba(20, 130, 65, 0.9) 0%, rgb(52, 124, 9) 5%, rgba(34, 157, 0, 0.67) 100%), url(&quot;./img/backdrops/bg1.jpg&quot;); background-position: center center;"></div></div></div><div class="v-toolbar__content" style="height: 56px;"><div class="v-avatar elevation-10 primary" style="height: 50px; min-width: 50px; width: 50px;"><span class="headline white--text">C</span></div><div class="ml-3"><div class="title font-weight-regular"> Welcome, <span class="font-weight-bold">Coder</span></div><div class="caption mt-n1"> You are not signed in </div></div><div class="spacer"></div></div></header><section><div role="dialog" class="v-dialog__container"><!----></div><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section><section><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section></section><section><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section></section><section><div role="dialog" class="v-dialog__container"><!----></div></section></section></div><div data-v-4c22b934=""><main data-v-4c22b934="" class="v-main" style="padding: 104px 0px 0px;" data-booted="true"><div class="v-main__wrap"><div class="row no-gutters justify-center"><div class="col-md-7 col-11"><div class="v-timeline v-timeline--dense theme--light"><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl px-8 py-3 v-card v-sheet theme--dark primary"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Authorization </div><div class="caption">Gives you a time bound access token to call allowed APIs.</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(46, 125, 50); border-color: rgb(46, 125, 50);"></div></div></div><div class="v-timeline-item__opposite"><span class="title font-weight-bold primary--text">Authorization API</span></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(121, 85, 72); border-color: rgb(121, 85, 72);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> M-Pesa Express </div><div class="caption">Merchant initiated online payments</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="ml-3 v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small mt-3"><span class="v-btn__content">Simulate</span></button><button type="button" class="ml-3 v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small mt-3"><span class="v-btn__content">Query</span></button><!----></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(121, 85, 72); border-color: rgb(121, 85, 72);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #795548--text"> M-Pesa Express </div><small class="hidden-md-and-down"></small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(33, 150, 243); border-color: rgb(33, 150, 243);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Customer To Business (C2B) </div><div class="caption">Register URL for Validation/Confirmation and Simulate transaction.</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="ml-3 v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small mt-3"><span class="v-btn__content">Register URL</span></button><button type="button" class="ml-3 v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small mt-3"><span class="v-btn__content">Simulate</span></button><!----></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(33, 150, 243); border-color: rgb(33, 150, 243);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #2196F3--text"> Customer To Business (C2B) </div><small class="hidden-md-and-down"></small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(156, 39, 176); border-color: rgb(156, 39, 176);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Business To Customer (B2C) </div><div class="caption">Transact between an M-Pesa short code to a phone number registered on M-Pesa</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(156, 39, 176); border-color: rgb(156, 39, 176);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #9C27B0--text"> Business To Customer (B2C) </div><small class="hidden-md-and-down">https://sandbox.safaricom.co.ke/mpesa/b2c/v1/paymentrequest</small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(255, 152, 0); border-color: rgb(255, 152, 0);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Transaction Status </div><div class="caption">Check the status of a transaction</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(255, 152, 0); border-color: rgb(255, 152, 0);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #FF9800--text"> Transaction Status </div><small class="hidden-md-and-down">https://sandbox.safaricom.co.ke/mpesa/transactionstatus/v1/query</small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(0, 150, 136); border-color: rgb(0, 150, 136);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Account Balance </div><div class="caption">Enquire the balance on an M-Pesa BuyGoods (Till Number)</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(0, 150, 136); border-color: rgb(0, 150, 136);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #009688--text"> Account Balance </div><small class="hidden-md-and-down">https://sandbox.safaricom.co.ke/mpesa/accountbalance/v1/query</small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(96, 125, 139); border-color: rgb(96, 125, 139);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Reversals </div><div class="caption">Reverses an M-Pesa transaction.</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(96, 125, 139); border-color: rgb(96, 125, 139);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #607D8B--text"> Reversals </div><small class="hidden-md-and-down">https://sandbox.safaricom.co.ke/mpesa/reversal/v1/request</small></div></div><div class="v-timeline-item theme--light"><div class="v-timeline-item__body"><div class="rounded-xl rounded-tl-0 px-8 py-3 v-card v-card--hover v-sheet v-sheet--outlined theme--dark" style="background-color: rgb(80, 63, 182); border-color: rgb(80, 63, 182);"><div class="yellow--text font-weight-regular title text-truncate" style="max-width: 200px;"> Dynamic QR Code </div><div class="caption">Generates a dynamic QR (Production Only).</div><div class="row pt-3 pb-1 no-gutters justify-end"><button type="button" class="v-btn v-btn--outlined v-btn--rounded theme--dark v-size--small"><span class="v-btn__content">LETS GO!</span></button></div></div></div><div class="v-timeline-item__divider"><div class="v-timeline-item__dot v-timeline-item__dot--small"><div class="v-timeline-item__inner-dot" style="background-color: rgb(80, 63, 182); border-color: rgb(80, 63, 182);"></div></div></div><div class="v-timeline-item__opposite"><div class="headline font-weight-bold #503fb6--text"> Dynamic QR Code </div><small class="hidden-md-and-down">https://api.safaricom.co.ke/mpesa/qrcode/v1/generate</small></div></div></div></div></div><section><div role="dialog" class="v-dialog__container"><!----></div></section><section><div role="dialog" class="v-dialog__container"><!----></div><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section><section><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section></section><section><div role="dialog" class="v-dialog__container"><!----></div><section><div role="dialog" class="v-dialog__container"><!----></div></section></section><section><div role="dialog" class="v-dialog__container"><!----></div></section></section></div></main> <div data-v-4c22b934="" class="overlay-top"></div> <div data-v-4c22b934="" class="overlay-right"></div> <div data-v-4c22b934="" class="overlay-bottom"></div> <div data-v-4c22b934="" class="overlay-left"></div></div><div role="dialog" class="v-dialog__container"></div></div><div role="document" class="v-dialog__content" style="z-index: 202;"><div class="v-dialog" style="transform-origin: center center; max-width: 1000px; display: none;"><div class="rounded-xl v-card v-card--flat v-sheet theme--light rounded-0"><div class="v-image v-responsive my-8 theme--light" style="height: 230px; filter: hue-rotate(293deg);"><div class="v-responsive__sizer" style="padding-bottom: 107.914%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;./img/illustrations/website-maintenance.svg&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 139px;"></div></div><div class="mb-3 mx-5 text-body-2"><div><div class="font-weight-bold" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.25px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: 700 !important; font-size: 14px;"><span style="color: rgb(39, 190, 64); font-family: &quot;Times New Roman&quot;, Times, serif;">CUSTOMER DATA PRIVACY COMMUNICATION</span></div>
+<p><span style="font-family: &quot;Times New Roman&quot;, Times, serif;"><br></span></p>
+
+
+<div class="font-weight-bold" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.25px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: 700 !important; font-size: 14px;"><span style="color: rgb(39, 190, 64); font-family: &quot;Times New Roman&quot;, Times, serif;">Dear partner,</span></div>
+<div class="font-weight-bold" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.25px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: 700 !important; font-size: 14px;">
+    <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; background: white; font-size: 15px;"><span style="font-family: &quot;Times New Roman&quot;, Times, serif;"><br></span></p>
+    <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; background: white; font-size: 15px;">
+    </p>
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">Lipa Na M-PESA empowers any business across
+                the country to receive and also make payments from the convenience of a mobile
+                phone.&nbsp;</span></strong></p>
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;"><br></span></strong></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">Today, more than 387,000 businesses such as
+                yours have made Lipa Na M-PESA the most trusted and preferred cashless payment
+                option in the country.&nbsp;More than 30 million customers rely on their mobile
+                phones when making payments and to most customers, the mobile phone has become
+                their wallet and identity.&nbsp;</span></strong></p>
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;"><br></span></strong></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">With the increasing relevance of mobile
+                phones, it has become critical to further safeguard customer data that can be
+                linked to a person's identity, especially their phone number.&nbsp;&nbsp;</span></b></p>
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;"><br></span></strong></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">Equally, the Data Protection Act 2019 which
+                came into law on 25th November 2019 requires all organizations that handle such
+                data including Safaricom and our Lipa Na M-PESA Partners to take action to
+                minimize the use and transfer of sensitive customer data such as name and phone
+                numbers during the processing of a transaction.</span></strong></p>
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;"><br></span></strong></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">In this regard, we have begun to minimize the
+                level of detail that our partners receive when a customer makes a payment.
+                These changes will affect both API and SMS notifications.&nbsp;</span></b></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">We are implementing this change in gradual phases starting
+                with availing a new API with minimized data on Daraja (V2)&nbsp; from 17th
+                March 2022.</span></b></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; letter-spacing: 0px;">&nbsp;</span></b></p>
+
+    <p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black; letter-spacing: 0px;">Below is a comparison of our current
+                notification detail with the minimized level to be achieved at the end of this
+                process.&nbsp;</span></b></p>
+    <p><br></p>
+</div>
+
+
+<p>
+</p>
+<p>
+</p>
+<table cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;" class="Table cke_show_border">
+    <tbody>
+        <tr>
+
+            <td colspan="2" style="border-width: 1px; border-style: solid; border-color: black; height: 20px; vertical-align: bottom; width: 56.6204%;">
+                <p><span style="font-size: 12px;"><span style="font-family: Calibri, sans-serif;"><strong style=""><span style="font-family: &quot;Century Gothic&quot;, sans-serif;"><span style="color: black;">Parameters shared currently&nbsp; via API (V1)</span></span></strong></span></span></p>
+            </td>
+            <td colspan="2" style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: 1px solid black; height: 20px; vertical-align: bottom; width: 43.2535%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">What will be shared after minimization (V2)</span></span></strong></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:none; border-top:none; height:20px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Detail</span></span></strong></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Description</span></span></strong></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: none; border-top: none; height: 20px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Detail</span></span></strong></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 30.6122%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Description</span></span></strong></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction Type</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">G2 Transaction Type name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction Type</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">G2 Transaction Type name</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction ID</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">M-PESA transaction ID</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction ID</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">M-PESA transaction ID</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction Time</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction date and time</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction Time</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction date and time</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction amount</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Buy goods or Paybill amount transacted</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction amount</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Buy goods or Paybill amount transacted</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Business Shortcode</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Merchant store Till or Paybill number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Business Shortcode</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Merchant store Till or Paybill number</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Bill Reference Number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Paybill account number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Bill Reference Number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Paybill account number</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Invoice Number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;">&nbsp;</span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Invoice Number</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Org Account balance</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Merchant’s account balance</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Org Account balance</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Merchant’s account balance</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Third-party Transaction ID</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction ID generated for the merchant</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Third-party Transaction ID</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Transaction ID generated for the merchant</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">MSISDN</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Phone number paying for goods or bill</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Masked MSISDN</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Masked Phone number paying for goods or bill</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:20px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">First Name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Customer’s first name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 27.6166%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">First Name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 30.5195%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Customer’s first name</span></span></span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:19px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Middle Name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 19px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Customer’s middle name</span></span></span></span></p>
+            </td>
+            <td style="height: 19px; vertical-align: bottom; width: 27.6166%;"><br></td>
+            <td style="height: 19px; vertical-align: bottom; width: 30.5195%;"><br></td>
+        </tr>
+        <tr>
+            <td style="border-bottom:1px solid black; border-left:1px solid black; border-right:1px solid black; border-top:none; height:20px; vertical-align:bottom">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Last Name</span></span></span></span></p>
+            </td>
+            <td style="border-bottom: 1px solid black; border-left: none; border-right: 1px solid black; border-top: none; height: 20px; vertical-align: bottom; width: 22.3203%;">
+                <p><span style="font-size: 12px;"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"><span style="color: black;">Customer’s last name</span></span></span></span></p>
+            </td>
+            <td style="height: 20px; vertical-align: bottom; width: 27.6166%;"><br></td>
+            <td style="height: 20px; vertical-align: bottom; width: 30.5195%;"><br></td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: &quot;Times New Roman&quot;, Times, serif;"><br></span></p>
+<p><span style="font-family: &quot;Times New Roman&quot;, Times, serif;"><br></span></p>
+
+<table border="0" cellpadding="0" cellspacing="0" summary="" title="" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; border: none; border-collapse: collapse; empty-cells: show; width: 709px; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; height: 161px; font-size: medium;">
+    <tbody style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px;">
+        <tr style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px;">
+
+            <td valign="top" width="10.897435897435898%" style="background-repeat: no-repeat; box-sizing: inherit; padding: 4pt; margin: 0px; border: 1px solid black; border-collapse: collapse; width: 49.7884%; vertical-align: top;">
+                <p style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0in 0in 0.0001pt; line-height: 1.5;"><strong><span style="color: black; font-size: 15px;">Current SMS format</span></strong></p>
+            </td>
+            <td valign="top" width="52.67094017094017%" style="background-repeat: no-repeat; box-sizing: inherit; padding: 4pt; margin: 0px; border: 1px solid black; border-collapse: collapse; width: 50.0705%; vertical-align: top;"><b><span style="color: black; font-size: 15px;">New SMS format</span></b></td>
+        </tr>
+        <tr style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px;">
+            <td valign="top" width="10.897435897435898%" style="background-repeat: no-repeat; box-sizing: inherit; padding: 4pt; margin: 0px; border: 1px solid black; border-collapse: collapse; width: 49.7884%; vertical-align: top;">
+                <p style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0in 0in 0.0001pt; line-height: 1.5;"><span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black; font-size: 15px;">OB57V1MMEV You have received Ksh 1,000.00 from </span><b><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: rgb(0, 176, 80); font-size: 15px;">Jane Rita Doe 254721345654</span></b></span><span style="color: black; font-size: 15px;"> on
+                        3/5/20 at 6:23 New M-PESA balance is Ksh2,345.00. Transaction cost, Ksh0.00. To
+                        reverse, Forward this message to 456.</span></p>
+            </td>
+            <td valign="top" width="52.67094017094017%" style="background-repeat: no-repeat; box-sizing: inherit; padding: 4pt; margin: 0px; border-width: 1px; border-style: solid; border-color: black; width: 50.0705%; vertical-align: top;">
+                <p style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0in 0in 0.0001pt; line-height: 1.5;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 16px;"><span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black; font-size: 15px;">OB57V1MMEV You have received Ksh 1,000.00 from </span><b style=""><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: rgb(192, 0, 0); font-size: 15px;">Jane </span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: rgb(0, 176, 80); font-size: 15px;">2547</span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: rgb(192, 0, 0); font-size: 15px;">XXXXX</span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: rgb(0, 176, 80); font-size: 15px;">654</span></b></span><span style="color: black; font-size: 15px;"> on 3/5/20 at 6:23 New M-PESA balance is Ksh2,345.00.
+                            Transaction cost, Ksh0.00. To reverse, Forward this message to 456.</span></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: &quot;Times New Roman&quot;, Times, serif;"><br>
+    </span></p>
+
+
+<p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; background: white; font-size: 15px;">
+</p>
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">Upon payment by a customer, you will now receive a redacted phone
+            number and a customer's first name as the confirmation message.&nbsp;</span></strong></p>
+
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">To complete this process, you will need to make the changes
+            detailed below.</span></b></p>
+<p><br></p>
+
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="background: white;  border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+            <td width="185" valign="top" style="width: 185px; padding: 0in 7px;  border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><strong>Safaricom</strong></p>
+            </td>
+            <td width="258" valign="top" style="width: 257px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">Description</span></b></p>
+            </td>
+            <td width="306" valign="top" style="width: 305px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">What
+                            is expected from Partners</span></b></p>
+            </td>
+            <td width="270" valign="top" style="width: 269px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">Date</span></b></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1">
+            <td width="185" valign="top" style="width: 185px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">Avail of
+                        the live API ready for integration on Daraja labeled <b>V2</b>.</span></p>
+            </td>
+            <td width="258" valign="top" style="width: 257px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">The new <b>V2
+                            API</b> with masked data will be available for partners to test and integrate
+                        with their platforms.</span></p>
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">Safaricom
+                        will also avail the V2 API documentation on Daraja for reference. </span></p>
+            </td>
+            <td width="306" valign="top" style="width: 305px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p class="xxxxmsonormal" style="font-family: Calibri, sans-serif; margin: 0in 0in 0in 0.5in; text-indent: -0.25in; font-size: 15px;"><span style="font-family: Symbol; font-size: 13px;"><span style="mso-list:Ignore">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </span></span></span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black;">Partners will be
+                        expected to do some developments on their end to be able to consume the new
+                        API.</span></p>
+                <p class="xxxxmsonormal" style="font-family: Calibri, sans-serif; margin: 0in 0in 0in 0.5in; text-indent: -0.25in; font-size: 15px;"><span style="font-family: Symbol; font-size: 13px;"><span style="mso-list:Ignore">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </span></span></span><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black;">Safaricom will be
+                        available to offer support</span></p>
+            </td>
+            <td width="270" valign="top" style="width: 269px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">API will
+                        be live on<b> 17<sup>th</sup> March 2022</b></span></p>
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">&nbsp;</span></b></p>
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">&nbsp;</span></b></p>
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="color: black;">&nbsp;</span></b></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2;mso-yfti-lastrow:yes">
+            <td width="185" valign="top" style="width: 185px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">Migration
+                        to the new&nbsp; <b>V2 API</b></span></p>
+            </td>
+            <td width="258" valign="top" style="width: 257px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">This
+                        will be a gradual process of moving our partners to the new API. This will be
+                        done in batches.</span></p>
+            </td>
+            <td width="306" valign="top" style="width: 305px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><span style="color: black;">Partners
+                        will be migrated in batches, with the last batch being on the night of&nbsp;<b>30<sup>th</sup>&nbsp;June
+                            2022</b></span></p>
+            </td>
+            <td width="270" valign="top" style="width: 269px; padding: 0in 7px;border: 1px solid;
+  border-collapse: collapse;
+  border-color: black;">
+                <p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; font-size: 15px;"><b><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black;">The
+                            old API will be unavailable from 11:59 PM EAT on 29<sup>th</sup>&nbsp;June
+                            2022 </span></b><span style="font-family: &quot;Century Gothic&quot;, sans-serif; color: black;">and all partners will need to be on the new API to successfully
+                        consume our services.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+</p>
+<p style="margin-right: 0in; margin-left: 0in; font-family: Calibri, sans-serif; background: white; font-size: 15px;">
+</p>
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">We are inviting you to test the enhanced C2B API and share
+            feedback. Please find the M-PESA Client to Business (C2B) V2 API Documentation
+            here <a href="./Documentation"><span style="color: blue;">./Documentation</span></a>.&nbsp;
+        </span></strong></p>
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;"> More information will be shared in due course.</span></strong></p>
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;"><br></span></strong></p>
+
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">Should you need further clarification or support, please reach out
+            to the API Support Team at&nbsp;<a href="mailto:apisupport@Safaricom.co.ke"><span style="color: blue;">apisupport@Safaricom.co.ke</span></a>.&nbsp;</span></strong></p>
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><strong><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">&nbsp;</span></strong></p>
+
+<p class="MsoNormal" style="margin: 0in; font-size: 15px; font-family: Calibri, sans-serif; background: white;"><b><span style="font-size: 16px; font-family: &quot;Corbel Light&quot;, sans-serif; color: black;">Thank you for your support. We continue to work on more innovations
+            and features to empower you to manage and grow your business with M-PESA.&nbsp;</span></b></p>
+<p><br></p>
+
+
+<div class="my-3 text-caption" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin-right: 0px; margin-left: 0px; font-weight: 400; line-height: 1.25rem; font-family: Roboto, sans-serif; color: rgba(0, 0, 0, 0.87); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-top: 12px !important; margin-bottom: 12px !important; letter-spacing: 0.0333333em !important; font-size: 0.75rem;">
+</div>
+
+<div class="font-weight-bold primary--text" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; font-family: Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.25px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: 700 !important; color: var(--v-primary-base)  !important; caret-color: var(--v-primary-base)  !important; font-size: 14px;"><span style="font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 14px;">Kind Regards,</span></div>
+<div class="font-weight-bold primary--text" style="background-repeat: no-repeat; box-sizing: inherit; padding: 0px; margin: 0px; font-family: Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.25px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: 700 !important; color: var(--v-primary-base)  !important; caret-color: var(--v-primary-base)  !important; font-size: 14px;"><u style=""><span style="font-family: &quot;Times New Roman&quot;, Times, serif;">M-PESA Business</span></u></div></div><div class="v-input theme--light v-input--selection-controls v-input--switch"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="input-80" role="switch" type="checkbox" aria-disabled="false" value=""><div class="v-input--selection-controls__ripple"></div><div class="v-input--switch__track theme--light"></div><div class="v-input--switch__thumb theme--light"><!----></div></div><label for="input-80" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Don't show this notice again.</label></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div><div class="row pb-5 no-gutters justify-center"><button type="button" class="v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default primary"><span class="v-btn__content">CLOSE</span></button></div></div></div></div></div></body></html>
